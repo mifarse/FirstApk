@@ -5,7 +5,8 @@
 </head>
 <body>
 	<h1 align="center">Тыкай тыкай!</h1>
-	<button id="hero" onclick="incr()" style="width:100%">Старт!</button>
+	<button id="hero" style="width:100%; height:100%">Старт!</button>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript">
 		var i = 0;
 		function incr(){
@@ -13,6 +14,9 @@
 			i++;
 			hero.innerText = i;
 		}
+		$("#hero").bind("touchstart",function(){
+			incr();
+		});
 	</script>
 </body>
 </html>
