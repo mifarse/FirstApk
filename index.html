@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>MyApp</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 align="center">Тыкай тыкай!</h1>
+	<button id="hero" onclick="incr()" style="width:100%">Старт!</button>
+	<script type="text/javascript">
+		var i = 0;
+		function incr(){
+			var hero = document.getElementById("hero");
+			i++;
+			hero.innerText = i;
+		}
+	</script>
+</body>
+</html>
